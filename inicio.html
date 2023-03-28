@@ -16,8 +16,8 @@
     -->
 <body>
     
-    <video autoplay muted loop id="player" src="">
-        <source src="" type="video/mp4">
+    <video autoplay muted loop id="player">
+        <source src="video.mp4" type="video/mp4"/>
     </video>
         <div class="container">
             <div class="contert">
@@ -29,12 +29,12 @@
                             <li> <a href="#"></a>mensaje3</li>
                             <li> <a href="#"></a>mensaje4</li>
                             <li>
-                                <span class="materia-symbols-outlined ico"> search</span>
+                                <span class="material-symbols-outlined icon"> search</span>
                             </li>
                         </ul>
                 </nav>                
                     <div class="headline">
-                        <h2> video en movimiento</h2>
+                        <h2> CREATIVE BLOCK</h2>
                         <p> pueder ver el video como se mueve</p>
                             <div class="buttons">
                                     <a href="#" class="get-started">iniciar agora</a>
@@ -45,10 +45,15 @@
         </div>
     <!------------------------------------------------------------------------>
 <style>
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
+    }
     html,body{
         background-color: rgb(114, 49, 49);
         font-family: "roboto", sans-serif;
-        color: rgb(164, 241, 215);
+        color: rgb(3, 29, 20);
         margin: 0;
     }
     #player{
@@ -60,7 +65,6 @@
         display: flex;
         justify-content: center;
         position: fixed;
-        background: rgb(2, 42, 32);
         height: 100%;
         width: 100%;
     }
@@ -95,7 +99,7 @@ height: 96px;
     font-weight: 300;
     }
 .navbar ul li a {
-    color: aliceblue;
+    color: rgb(241, 247, 251);
     text-decoration: none;
 }
 .headline{
@@ -106,10 +110,10 @@ height: 96px;
     padding-bottom: 96px;
 }
 .headline h2{
-    font-size: 64px;
+    font-size: 100px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 0 0 16px 0;
+    margin: 100px 600px 106px 0;
     max-width: 512px;
 }
 .headline p{
@@ -128,8 +132,8 @@ height: 96px;
 }
 .headline .buttons a.get-started{
     padding: 12px 24px;
-    border: 1px solid #ffffff;
-    border-radius: 0 16px;
+    border: 1px solid #92747467;
+    border-radius: 10px 16px;
 }
 </style>
 
