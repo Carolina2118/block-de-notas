@@ -1,31 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CREATIVE BLOCK</title>
-</head>
-<body style="background-image: url(foto.png); background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
-    <form action="main.php">        
-        <ul id="menu" style=" float: left;width: 100px;margin: 20px;padding: 0; /*Margen interno*/list-style-type: none; /*Sin viñetas*/">
-            <li style=" border: #d3d3d3 1px solid;background-color: #CBE783;margin-bottom: 5px;font-size: 90%;text-align: center;
-            line-height: 30px; /*Ancho de los elementos*/">
+    <title>Inicio</title>
+</head><!--
+    <body style=" background-image: url(indice.jpg); background-repeat: no-repeat;background-attachment: fixed; background-size: cover; ">
+        <div style=" display: flex; justify-content: center; align-items: center;"> 
             
-            <a href="inicio.html" style="text-decoration: none; /*Sin subrayado*/
-  color: #4F4F4F;">Inicio</a></li></ul>
-        
-        <div class="contenido" style="margin: 20px 20px 10px 140px; padding: 10px 15px;">
-            <h2 style="color: #70AF0A;
-            border-bottom: #CFDFB5 1px solid; /*Borde debajo del texto*/"> CREATIVE BLOCK</h2>
-            
-            <p><label>Titulo:</label></p>
-            <p><input name="nombre" type="text" maxlength="15"></p>
-            
-            <p><label>Nota:</label></p>
-            <p><textarea name="consulta" cols="50" rows="10">Escribe aquí tu nota...</textarea></p>
-            <input name="restablecer" type="button" id="enviar" value="Enviar">
+            <a href="index.html" style=" font-size:50px;text-decoration: none; /*Sin subrayado*/
+            color: #a49d15; border-radius:70px; padding: 90px; margin: 250px;" >Inicio</a>
         </div>
-    </form>
-</body>
-</html>~
+    -->
+<body>
+    
+    <video autoplay muted loop id="player">
+        <source src="video.mp4" type="video/mp4"/>
+    </video>
+        <div class="container">
+            <div class="contert">
+                <nav class="navbar">
+                        <ul>
+                            <li>
+                                <a href="inicio.html" >Entrar al block</li>
+                            <li> 
+                                <a href="#"></a>Mis notas</li>
+                            <li> 
+                                <a href="#"></a>Papelero</li>
+                        </ul>
+                </nav>                
+                    <div class="headline">
+                            <h2>CREATIVE BLOCK</h2>
+                             
+                           
+                    </div>
+            </div>
+        </div>
+    <!------------------------------------------------------------------------>
+<style>
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
+    }
+    html,body{
+        background-color: rgb(114, 49, 49);
+        font-family: "roboto", sans-serif;
+        color: rgb(3, 29, 20);
+        margin: 0;
+    }
+    #player{
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 992%;
+        height: 100%;
+    }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;  
+    }
+    .navbar {
+     font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    }
+    .navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    }
+    .navbar ul li{
+    font-weight: 300;
+    }
+    .navbar ul li .icon{
+    line-height: 0.9;
+    font-weight: 300;
+    }
+    .navbar ul li a {
+    color: rgb(241, 247, 251);
+    text-decoration: none;
+    justify-content: flex-end;
+    
+    }
+    .headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-bottom: 96px;
+    }
+    .headline h2{
+    font-size: 100px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 100px 600px 106px 0;
+    max-width: 512px;
+    }
+    
+    
+</style>
+
+    </body>
+</html>
