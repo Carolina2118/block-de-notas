@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CREATIVE BLOCK</title>
 </head>
-<body style="background-image: url(foto.png); background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
-    <form action="main.php">        
-        <ul id="menu" style=" float: left;width: 100px;margin: 20px;padding: 0; /*Margen interno*/list-style-type: none; /*Sin viñetas*/">
-            <li style=" border: #d3d3d3 1px solid;background-color: #CBE783;margin-bottom: 5px;font-size: 90%;text-align: center;
-            line-height: 30px; /*Ancho de los elementos*/">
-            
-            <a href="index.html" style="text-decoration: none; /*Sin subrayado*/
-  color: #4F4F4F;">Inicio</a></li></ul>
-        
-        <div class="contenido" style="margin: 20px 20px 10px 140px; padding: 10px 15px;">
-            <h2 style="color: #70AF0A;
-            border-bottom: #CFDFB5 1px solid; /*Borde debajo del texto*/"> CREATIVE BLOCK</h2>
-            
-            <p><label>Titulo:</label></p>
-            <p><input name="titulo" type="text" maxlength="15"></p>
-            
-            <p><label>Nota:</label></p>
-            <p></p>
-            <p><textarea name="nota" cols="50" rows="10" placeholder="Escribe aquí tu nota..."></textarea></p>
-            <button type='submit' style='justify-content: center; margin-top: 48px;
-            background-color:rgb(49, 179, 31); border-radius: 6px;
-            width:10em; padding: 6px;font-size: 20px;'>Enviar</button>
 
-        </div>
+<body style="background-image: url(foto.png); background-repeat: no-repeat; background-attachment: fixed;
+             background-size: cover;">
+    
+    <form action="main.php">
+
+        <ul>
+
+            <li ><a  href="index.html">Inicio</a></li>
+            <li ><a href="#news">Notas</a></li>
+            <li ><a href="#about">Papelera</a></li>
+            <li ><a href="#contact">Contact</a></li>
+<style>
+   ul {
+  padding: 0;
+  background-color: #538b642f;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+}
+
+li a.active {
+  background-color: #04aa6d67;
+  color: rgb(7, 6, 6);
+}
+
+li a:hover:not(.active) {
+  background-color: #418a5180;
+  color: white;
+}
+</style>
+          </ul>
+          
+                    <!--------------------------------------------------------------------->
+                    <div class="contenido" style="margin: 20px 20px 10px 140px; padding: 10px 15px;">
+                        <h2 style="color: #1a1e12; border-bottom: #CFDFB5 1px solid; /*Borde debajo del texto*/">
+                            CREATIVE BLOCK</h2>
+
+                        <p><label>Titulo:</label></p>
+                        <p><input name="titulo" type="text" maxlength="15"></p>
+
+                        <p><label>Nota:</label></p>
+                        <p></p>
+                        <p><textarea name="nota" cols="50" rows="10" placeholder="Escribe aquí tu nota..."></textarea>
+                        </p>
+
+                        <button type='submit' style='justify-content: center; margin-top: 48px;
+                            background-color:rgb(49, 179, 31); border-radius: 6px;
+                             width:10em; padding: 6px;font-size: 20px;'>Enviar</button>
+
+                    </div>
+
     </form>
 </body>
+
 </html>
